@@ -1,13 +1,22 @@
+
+import { IoCartOutline } from "react-icons/io5";
+
+import { GoPackage } from "react-icons/go";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Package, User } from "lucide-react";
 
 const Navbar = () => {
   return (
     <section>
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-4 text-sm">
+      <header className="flex items-center justify-between px-3 py-4 text-sm">
         <div className="font-medium">MONE</div>
-        <div className="text-gray-600">3 weeks ago, 14 friends</div>
+        <div className="text-gray-600 text-2xl flex gap-6">
+            <IoCartOutline />
+          <GoPackage />
+          <User />
+        </div>
         <div className="flex items-center gap-4">
           <span className="text-gray-600">03 06 24</span>
           <div className="w-2 h-2 bg-black rounded-full"></div>
@@ -15,9 +24,9 @@ const Navbar = () => {
       </header>
 
       {/* Barcode */}
-      <div className="absolute top-12 right-6">
+      <div className="absolute top-12 right-3">
         <div className="flex flex-col items-end gap-1">
-          <div className="flex gap-px">
+          <div className="flex">
             {Array.from({ length: 12 }).map((_, i) => (
               <div key={i} className="w-px h-12 bg-black"></div>
             ))}
@@ -27,10 +36,10 @@ const Navbar = () => {
       </div>
 
       {/* Links */}
-      <div className="text-xs px-6 mb-12 text-gray-500">
+      <div className="text-xs px-3 mb-12 text-gray-500">
         BRAND
         <br />
-        <a href="">AINOS</a>
+        <a href="/">AINOS</a>
         <br />
         
         <Link to="/collection">COLLECTION</Link>

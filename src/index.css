@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Medium.ttf') format('truetype');
+}
 @import "tailwindcss";
 
 
@@ -15,4 +24,8 @@
   .animate-marquee {
     animation: marquee 20s linear infinite;
   }
+}
+
+body{
+    font-family: "Gilroy";
 }
