@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-     <section>
+    <section>
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 text-sm">
         <div className="font-medium">MONE</div>
@@ -24,8 +25,17 @@ const Navbar = () => {
           <div className="text-xs tracking-wider">9 8 0 3 0 3 1 6 0 9</div>
         </div>
       </div>
-    </section>
 
+      {/* Links */}
+      <div className="text-xs px-6 mb-12 text-gray-500">
+        BRAND
+        <br />
+        <a href="">AINOS</a>
+        <br />
+        
+        <Link to="/collection">COLLECTION</Link>
+      </div>
+    </section>
   );
 };
 
