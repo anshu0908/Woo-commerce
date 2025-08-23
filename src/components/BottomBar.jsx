@@ -1,6 +1,7 @@
 import { Handbag, Home, House, Package, Phone, Search, TvMinimal, UserRound } from 'lucide-react'
 import React from 'react'
 import { FaBoxOpen, FaShoppingCart, FaUserCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const BottomBar = () => {
   return (
@@ -10,9 +11,9 @@ const BottomBar = () => {
                     <div className="hover:text-black cursor-pointer">
                     <Search strokeWidth={0.75} />
                     </div>
-                  <div className="hover:text-black cursor-pointer">
+                  <Link to={'/cart'} className="hover:text-white cursor-pointer">
                     <Handbag strokeWidth={0.75} />
-                    </div>
+                    </Link>
                                        <div className="hover:text-black cursor-pointer">
                  <TvMinimal color="#ffffff" strokeWidth={0.75} fill='#E4FF75' />
                    </div> 

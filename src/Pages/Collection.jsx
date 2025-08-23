@@ -172,7 +172,7 @@ const Collection = () => {
               {/* Floating Info Card */}
               <div className="absolute bottom-3 left-3 right-3 bg-white rounded-xl shadow-md px-4 py-3 flex justify-between items-start transition duration-300 group-hover:shadow-lg">
                 <div>
-                  <h3 className="font-semibold text-base leading-snug">
+                  <h3 className=" text-base leading-snug">
                     {product.name}
                   </h3>
                   <div className="flex text-yellow-500 text-sm">
@@ -180,7 +180,7 @@ const Collection = () => {
                   </div>
                   <p className="text-sm text-gray-500 mt-1">{product.sizes}</p>
                 </div>
-                <p className="font-bold text-lg">{product.price}</p>
+                <p className=" text-lg">{product.price}</p>
               </div>
 
               {/* Floating Arrow */}
