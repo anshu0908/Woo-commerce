@@ -55,7 +55,7 @@ const Products = () => {
         />
       </div>
       <div className="space-y-1">
-        <h3 className="text-sm font-medium">{product.name}</h3>
+        <h3 className="text-xl font-medium">{product.name}</h3>
         <p className="text-lg font-semibold">${product.price}</p>
       </div>
     </div>

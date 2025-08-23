@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Collection from "./Pages/Collection";
+import BottomBar from "./components/BottomBar";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         
       </Routes>
 
-      
+      <BottomBar/>
       <Footer />  
     </BrowserRouter>
   );

@@ -1,22 +1,14 @@
-
-import { IoCartOutline } from "react-icons/io5";
-
+import { FaBoxOpen, FaShoppingCart, FaUserCircle } from "react-icons/fa";
 import { GoPackage } from "react-icons/go";
-import React from "react";
 import { Link } from "react-router-dom";
-import { Package, User } from "lucide-react";
+import {  User } from "lucide-react";
 
 const Navbar = () => {
   return (
     <section>
       {/* Header */}
       <header className="flex items-center justify-between px-3 py-4 text-sm">
-        <div className="font-medium">MONE</div>
-        <div className="text-gray-600 text-2xl flex gap-6">
-            <IoCartOutline />
-          <GoPackage />
-          <User />
-        </div>
+        <div className="font-medium">LUXE</div>
         <div className="flex items-center gap-4">
           <span className="text-gray-600">03 06 24</span>
           <div className="w-2 h-2 bg-black rounded-full"></div>

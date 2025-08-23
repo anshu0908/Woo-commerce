@@ -22,7 +22,7 @@ const FabricSection = () => {
               backgroundPosition: "top",
             }}
           />
-          <div className="absolute bottom-4 left-4 text-xs text-gray-600">
+          <div className="absolute bottom-4 hidden md:block left-4 text-xs text-gray-600">
             SUPER SOFT
             <br />
             ORGANIC
