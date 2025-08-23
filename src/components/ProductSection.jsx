@@ -25,7 +25,7 @@ const Products = () => {
       id: 4,
       name: "100% linen slim-fit t-shirt",
       price: 19.99,
-      img: "/placeholder.svg?height=600&width=450",
+      img: "https://shoptommy.scene7.com/is/image/ShopTommy/XM05637_XJS_alternate10?wid=1728&qlt=80%2C0",
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const Products = () => {
       </div>
       <div className="space-y-1">
         <h3 className="text-xl font-medium">{product.name}</h3>
-        <p className="text-lg font-semibold">${product.price}</p>
+        <p className="text-lg font-semibold">₹{product.price}</p>
       </div>
     </div>
   );
@@ -89,7 +89,7 @@ const Products = () => {
 
       {/* ---------- Product Grid (Shirts) ---------- */}
       <div className="px-6 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-7xl mx-auto">
           {shirtProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
